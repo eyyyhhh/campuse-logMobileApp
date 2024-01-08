@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--login header-->
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:src="@drawable/login_bg"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-15px"/>
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/login_logo"
+                android:layout_marginTop="190px"
+                android:layout_marginLeft="100px"/>
+
+        </RelativeLayout>
+
+        <!--input text-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200px"
+            android:layout_marginLeft="80px"
+            android:layout_marginRight="80px">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full Name"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:typeface="sans"
+                android:paddingBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:hint="Juan Dela Cruz"
+                android:padding="15dp"
+                android:paddingLeft="30dp"
+                android:layout_marginTop="-16px"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="#B7505050"
+                android:paddingStart="20dp"
+                android:background="@drawable/hover"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:textSize="15dp"
+                android:typeface="sans"
+                android:paddingBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:hint="Juan123"
+                android:inputType="textPassword"
+                android:padding="15dp"
+                android:paddingLeft="30dp"
+                android:layout_marginTop="-16px"
+                android:textColor="@color/black"
+                android:textColorHint="#B7505050"
+                android:paddingStart="20dp"
+                android:background="@drawable/hover"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp"
+                android:background="@drawable/button_gradient"
+                android:text="Login"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="If there's a problem login in your account seek for school faculty assistance."
+                android:gravity="center"
+                android:textColor="#737373"
+                android:layout_marginTop="20px"
+                android:textSize="25px"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="match_parent">
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#3E3E3E" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OR"
+                    android:gravity="center"
+                    android:textColor="#3E3E3E"
+                    android:layout_marginTop="5px"
+                    android:textSize="40px"/>
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#3E3E3E" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnloginVisitor"
+                android:text="Login as Visitor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_border"
+                android:textColor="@color/blue"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About the App"
+            android:gravity="center"
+            android:textColor="#737373"
+            android:layout_marginTop="40px"
+            android:textSize="45px"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

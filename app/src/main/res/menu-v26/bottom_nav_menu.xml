@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/baseline_person_24"
+        android:iconTint="@color/darkblue"
+        android:iconTintMode="add"
+        android:title="Profile" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/baseline_qr_code_scanner_24"
+        android:iconTint="@color/darkblue"
+        android:iconTintMode="add"
+        android:title="Health Check" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/baseline_bookmarks_24"
+        android:iconTint="@color/darkblue"
+        android:iconTintMode="add"
+        android:title="Logs" />
+
+    <item
+        android:id="@+id/navigation_info"
+        android:icon="@drawable/baseline_info_24"
+        android:iconTint="@color/darkblue"
+        android:iconTintMode="add"
+        android:title="About" />
+
+
+</menu>

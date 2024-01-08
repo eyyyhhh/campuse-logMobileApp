@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".questionnaires2">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginTop="80px"
+        android:layout_height="match_parent">
+
+        <!--login header-->
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="170dp"
+                android:layout_height="190dp"
+                android:src="@drawable/questionnaire_bg"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="-15px"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textAlignment="textEnd"
+                android:layout_marginTop="80px"
+                android:layout_marginRight="150px">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Covid-19"
+                    android:textColor="@color/black"
+                    android:textAlignment="textEnd"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:typeface="sans"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Self-Screening"
+                    android:textColor="@color/black"
+                    android:textAlignment="textEnd"
+                    android:textSize="18dp"
+                    android:typeface="sans"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Questionnaire"
+                    android:textColor="@color/black"
+                    android:textAlignment="textEnd"
+                    android:textSize="18dp"
+                    android:typeface="sans"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60px">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="40dp"
+                android:text="Check the corresponding box if you \nexperience the symptoms below"
+                android:layout_marginBottom="35dp"
+                android:textColor="@color/black"
+                android:textAlignment="textStart"
+                android:textSize="15dp"
+                android:typeface="sans"/>
+
+            <LinearLayout
+                android:background="@drawable/hover"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="80px"
+                android:paddingLeft="80px">
+
+                <CheckBox
+                    android:id="@+id/checkBox2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:buttonTint="@color/darkblue"
+                    android:checked="false" />
+
+                <TextView
+                    android:layout_width="281dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Cough"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:typeface="sans" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="80px"
+                android:paddingLeft="80px">
+
+                <CheckBox
+                    android:id="@+id/checkBox3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:buttonTint="@color/darkblue"
+                    android:checked="false" />
+
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:text="Body Pain"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:typeface="sans"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="@drawable/hover"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="80px"
+                android:paddingLeft="80px">
+
+                <CheckBox
+                    android:id="@+id/checkBox4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:buttonTint="@color/darkblue"
+                    android:checked="false" />
+
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Difficulty in Breathing"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:typeface="sans"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="80px"
+                android:paddingLeft="80px">
+
+                <CheckBox
+                    android:id="@+id/checkBox5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:buttonTint="@color/darkblue"
+                    android:checked="false" />
+
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Sore Throat"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:typeface="sans" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnScan"
+                android:text="Submit"
+                android:layout_width="300dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_border"
+                android:textColor="@color/blue"
+                android:layout_marginTop="30dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/back"
+                android:text="Back"
+                android:layout_width="300dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_border"
+                android:textColor="@color/blue"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

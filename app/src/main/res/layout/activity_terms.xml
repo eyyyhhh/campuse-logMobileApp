@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".terms">
+
+    <LinearLayout
+        android:orientation="vertical"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--login header-->
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:src="@drawable/login_bg"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-15px"/>
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/login_logo"
+                android:layout_marginTop="190px"
+                android:layout_marginLeft="100px"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About "
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:typeface="sans"
+            android:paddingBottom="10dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <!--input text-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px"
+            android:paddingBottom="100dp"
+            android:layout_marginLeft="80px"
+            android:layout_marginRight="80px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Our Service "
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:typeface="sans"
+                android:paddingBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log.d: Campus e-Log Book in partnership with STI College Balayan helps you discover and do what you love. To do that, we show you things we think will be relevant, interesting and personal to you based on your onsite and offsite activity. To provide our Service, we need to be able to identify you and your interests. Some of the things we show you are promoted by advertisers. As part of our service, we try to ensure that even promoted content is relevant and interesting to you. You can identify promoted content because it will be clearly labelled."
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:typeface="sans"
+                android:paddingBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Content "
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:typeface="sans"
+                android:paddingBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You can only use Log.d if you can legally form a binding contract with Log.d, and only in compliance with these Terms and all applicable laws. When you create your Pinterest account, you must provide us with accurate and complete information. You can’t use Pinterest if it would be prohibited by US sanctions. Any use or access by anyone under the age of 13 is not allowed. If you’re based in the EEA, you can only use Pinterest if you are over the age at which you can provide consent to data processing under the laws of your country. Using Pinterest may include downloading software to your computer, phone, tablet or other device. You agree that we may automatically update that software, and these Terms will apply"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:typeface="sans"
+                android:paddingBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Copyright Policy "
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:typeface="sans"
+                android:paddingBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lo.d may contain links to third-party websites, advertisers, services, special offers, or other events or activities that are not owned or controlled by Pinterest. We don’t endorse or assume any responsibility for any such third-party sites, information, materials, products or services. If you access any third-party websites, services or content from Pinterest, you do so at your own risk and you agree that Pinterest has no liability arising from your use of or access to any third-party websites, services or content."
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:typeface="sans"
+                android:paddingBottom="10dp"/>
+
+        </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

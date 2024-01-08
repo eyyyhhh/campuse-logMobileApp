@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_horizontal"
+            android:layout_marginTop="20dp"/>
+
+        <View
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:background="#3E3E3E" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="QR Scanner"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:typeface="sans"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Look for the School's Official QR Code."
+            android:textColor="#575656"
+            android:textAlignment="center"
+            android:layout_marginBottom="60dp"
+            android:textSize="12dp"
+            android:typeface="sans"/>
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="300dp"
+            android:src="@drawable/vectors"
+            android:layout_gravity="center"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnScan"
+            android:layout_width="260dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-35dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_gradient"
+            android:text="Scan"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>

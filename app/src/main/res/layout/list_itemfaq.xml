@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardViewDs"
+    android:layout_width="350dp"
+    android:elevation="500dp"
+    android:padding="10dp"
+    app:cardCornerRadius="8dp"
+    android:layout_marginTop="10dp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_centerInParent="true"
+    android:background="@drawable/container"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:layout_marginBottom="50px"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="start"
+            android:paddingLeft="20dp"
+            android:text="Mission"
+            android:textColor="@color/darkblue"
+            android:textSize="50px"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:background="#3E3E3E" />
+
+        <TextView
+            android:id="@+id/answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Age: 21 yearsold"
+            android:paddingRight="20dp"
+            android:gravity="start|center_vertical"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="30dp"
+            android:textColor="@color/black"
+            android:textSize="40px"/>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView >

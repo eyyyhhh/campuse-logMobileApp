@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".questionnaires">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginTop="80px"
+        android:layout_height="match_parent">
+
+        <!--login header-->
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="170dp"
+                android:layout_height="190dp"
+                android:src="@drawable/questionnaire_bg"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="-15px"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textAlignment="textEnd"
+                android:layout_marginTop="80px"
+                android:layout_marginRight="150px">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Covid-19"
+                    android:textColor="@color/black"
+                    android:textAlignment="textEnd"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:typeface="sans"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Self-Screening"
+                    android:textColor="@color/black"
+                    android:textAlignment="textEnd"
+                    android:textSize="18dp"
+                    android:typeface="sans"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Questionnaire"
+                    android:textColor="@color/black"
+                    android:textAlignment="textEnd"
+                    android:textSize="18dp"
+                    android:typeface="sans"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <!--input text-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingRight="80px"
+                android:paddingLeft="80px">
+
+                <CheckBox
+                    android:id="@+id/checkBox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:buttonTint="@color/darkblue"
+                    android:checked="false" />
+
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:text="1. Have you experienced any COVID-19 symptoms in the past 14 days?"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:layout_gravity="center"
+                    android:typeface="sans"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/hover"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingRight="80px"
+                android:paddingLeft="80px">
+
+                <CheckBox
+                    android:id="@+id/checkBox2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/darkblue"
+                    android:layout_gravity="center"
+                    android:checked="false" />
+
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:text="2.Have you been in close contact with someone who tested positive for COVID-19 in the past 14 days?"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:typeface="sans"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingRight="80px"
+                android:paddingLeft="80px">
+
+                <CheckBox
+                    android:id="@+id/checkBox3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:buttonTint="@color/darkblue"
+                    android:checked="false" />
+
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:text="3. Have you traveled internationally or to any high-risk areas in the past 14 days?"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:typeface="sans"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:background="@drawable/hover"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingRight="80px"
+                android:paddingLeft="80px">
+
+                <CheckBox
+                    android:id="@+id/checkBox4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:buttonTint="@color/darkblue"
+                    android:checked="false" />
+
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="4. Have you received a COVID-19 vaccine?"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:typeface="sans"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingRight="80px"
+                android:paddingLeft="80px">
+
+                <CheckBox
+                    android:id="@+id/checkBox5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:buttonTint="@color/darkblue"
+                    android:checked="false" />
+
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:text="5. Are you currently under quarantine or isolation due to a suspected or confirmed COVID-19 case?"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:typeface="sans"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/hover"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingRight="80px"
+                android:paddingLeft="80px">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Temperature:"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:typeface="sans" />
+
+                <EditText
+                    android:id="@+id/temp"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:typeface="sans" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnNext"
+                android:text="Next"
+                android:layout_width="300dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_border"
+                android:textColor="@color/blue"
+                android:layout_marginTop="50dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

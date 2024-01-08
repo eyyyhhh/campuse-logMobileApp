@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".visitor_login">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--login header-->
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:src="@drawable/login_bg"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-15px"/>
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/login_logo"
+                android:layout_marginTop="190px"
+                android:layout_marginLeft="100px"/>
+
+
+        </RelativeLayout>
+
+
+        <!--input text-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150px"
+            android:layout_marginLeft="80px"
+            android:layout_marginRight="80px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fullname"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:typeface="sans"
+                android:paddingBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/fullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:hint="Juan Dela Cruz"
+                android:padding="15dp"
+                android:paddingLeft="30dp"
+                android:layout_marginTop="-16px"
+                android:textColor="@color/black"
+                android:textColorHint="#B7505050"
+                android:inputType="text"
+                android:paddingStart="20dp"
+                android:background="@drawable/hover"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/ey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Age"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:typeface="sans"
+                    android:layout_marginTop="20dp"
+                    android:paddingBottom="10dp"/>
+
+                    <EditText
+                        android:id="@+id/ages"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-16px"
+                        android:background="@drawable/hover"
+                        android:hint="12"
+                        android:inputType="number"
+                        android:padding="15dp"
+                        android:paddingStart="20dp"
+                        android:paddingLeft="30dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#B7505050"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact Number"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:typeface="sans"
+                    android:layout_marginTop="20dp"
+                    android:paddingBottom="10dp"/>
+
+                <EditText
+                    android:id="@+id/contactNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:hint="09152345678"
+                    android:padding="15dp"
+                    android:paddingLeft="30dp"
+                    android:layout_marginTop="-16px"
+                    android:textColor="@color/black"
+                    android:textColorHint="#B7505050"
+                    android:inputType="phone"
+                    android:paddingStart="20dp"
+                    android:background="@drawable/hover"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingBottom="10dp"
+                android:text="Gender"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:typeface="sans" />
+
+            <RadioGroup
+                android:id="@+id/genderRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:outlineSpotShadowColor="@color/blue"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/maleRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="18dp"
+                    android:text="Male"/>
+
+                <RadioButton
+                    android:id="@+id/femaleRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="Female"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/trylangs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:layout_marginTop="20dp"
+                android:typeface="sans"
+                android:paddingBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/Address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:hint="Brgy. 123, Manila, Philippines"
+                android:inputType="textMultiLine"
+                android:padding="15dp"
+                android:paddingLeft="30dp"
+                android:layout_marginTop="-16px"
+                android:textColor="@color/black"
+                android:textColorHint="#B7505050"
+                android:paddingStart="20dp"
+                android:background="@drawable/hover"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnLogin"
+                android:text="Login as Visitor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_border"
+                android:textColor="@color/blue"
+                android:layout_marginTop="60dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

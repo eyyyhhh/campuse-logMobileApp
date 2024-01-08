@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@color/blue"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:typeface="sans"
+            android:layout_marginTop="25dp"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Make sure that all the information is legit"
+            android:textColor="#AEACAC"
+            android:textSize="10dp"
+            android:layout_gravity="center"
+            android:typeface="sans"
+            android:layout_marginTop="-10dp"/>
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp"
+            android:padding="20dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:typeface="sans"
+                android:paddingBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-16px"
+                android:background="@drawable/hover"
+                android:hint="Juan123"
+                android:inputType="text"
+                android:padding="10dp"
+                android:paddingStart="10dp"
+                android:paddingLeft="30dp"
+                android:textColor="@color/black"
+                android:textColorHint="#B7505050"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:layout_marginTop="18dp"
+                android:typeface="sans"
+                android:paddingBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:hint="Juan123"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:paddingLeft="30dp"
+                android:layout_marginTop="-16px"
+                android:textColor="@color/black"
+                android:textColorHint="#B7505050"
+                android:paddingStart="10dp"
+                android:background="@drawable/hover"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:layout_marginTop="18dp"
+                android:typeface="sans"
+                android:paddingBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:hint="Juan123"
+                android:inputType="number"
+                android:padding="10dp"
+                android:paddingLeft="30dp"
+                android:layout_marginTop="-16px"
+                android:textColor="@color/black"
+                android:textColorHint="#B7505050"
+                android:paddingStart="10dp"
+                android:background="@drawable/hover"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Number"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:layout_marginTop="18dp"
+                android:typeface="sans"
+                android:paddingBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/phoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:hint="Juan123"
+                android:inputType="number"
+                android:padding="10dp"
+                android:paddingLeft="30dp"
+                android:layout_marginTop="-16px"
+                android:textColor="@color/black"
+                android:textColorHint="#B7505050"
+                android:paddingStart="10dp"
+                android:background="@drawable/hover"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:paddingBottom="10dp"
+                android:text="Address"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:typeface="sans" />
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:hint="Juan123"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:paddingLeft="30dp"
+                android:layout_marginTop="-16px"
+                android:textColor="@color/black"
+                android:textColorHint="#B7505050"
+                android:paddingStart="10dp"
+                android:background="@drawable/hover"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_gradient"
+                android:text="Update"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
